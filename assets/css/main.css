@@ -349,8 +349,48 @@ pre code {
 }
 
 /* Container */
+.hi {
+  animation: 4s linear 1s infinite alternate hi;
+  font-size: 2.3rem;
+
+  display: inline-block;
+}
+@keyframes hi {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+    transition-timing-function: 3s;
+  }
+
+  100% {
+    transition: all 1s;
+    transform: rotate(0deg);
+  }
+}
 .text-center {
   text-align: center;
+}
+.color-white {
+  color: #fff;
+}
+.border-blue {
+  border: 1px solid #2581c7;
+  border-radius: 4px;
+  padding: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.border-blue:hover {
+  border-color: #fff;
+}
+
+.expertise span,
+.tools span {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: default;
 }
 .gap12 {
   gap: 12px;
@@ -2851,6 +2891,7 @@ input[type="button"]:disabled,
   max-width: 54em;
   padding: 8em 4em 4em 4em;
   width: calc(100% - 35%);
+  background: rgba(0, 0, 0, 2);
 }
 
 #main > section {
