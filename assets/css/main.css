@@ -350,7 +350,7 @@ pre code {
 
 /* Container */
 .hi {
-  animation: 4s linear 1s infinite alternate hi;
+  animation: hi 3s ease-in-out infinite alternate;
   font-size: 2.3rem;
 
   display: inline-block;
@@ -3199,46 +3199,6 @@ body.is-touch .poptrox-popup .closer {
 
 /* Large */
 
-@media screen and (max-width: 1280px) {
-  /* Header */
-
-  #header {
-    padding: 6em 3em 3em 3em;
-    width: 30%;
-  }
-
-  #header h1 {
-    font-size: 1.25em;
-  }
-
-  #header h1 br {
-    display: none;
-  }
-
-  #header > .inner {
-    margin-bottom: 0;
-  }
-
-  /* Footer */
-
-  #footer .copyright li {
-    border-left-width: 0;
-    display: block;
-    line-height: 2.25em;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  /* Main */
-
-  #main {
-    margin-left: 30%;
-    max-width: none;
-    padding: 6em 3em 3em 3em;
-    width: calc(100% - 30%);
-  }
-}
-
 /* Medium */
 
 @media screen and (max-width: 980px) {
@@ -3365,11 +3325,19 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
-    padding: 2.25em 1.5em;
+    padding: 2.25em 0 0;
+    background-size: cover !important;
+    height: 400px;
   }
-
+  #header > .inner {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
   #header h1 {
     font-size: 1.35em;
+    width: 100%;
+    text-align: center;
   }
 
   /* Footer */
@@ -3405,10 +3373,6 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (max-width: 480px) {
   /* Header */
-
-  #header {
-    padding: 4.5em 1.5em;
-  }
 
   #header h1 br {
     display: none;
