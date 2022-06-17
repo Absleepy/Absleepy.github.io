@@ -3344,9 +3344,10 @@ body.is-touch .poptrox-popup .closer {
     align-items: flex-end;
   }
   #header h1 {
-    font-size: 1.35em;
+    font-size: 1rem;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    display: grid;
   }
 
   /* Footer */
