@@ -354,6 +354,10 @@ pre code {
   display: inline-block;
   animation: hi 3s ease-in-out infinite alternate;
 }
+.title-text{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @keyframes hi {
   0% {
